@@ -36,6 +36,5 @@ To run the script you only need to run the file by command below:
 
 ```
 python botCrawler.py
-
 ```
 Also, to prevent too many messages from being sent to the bot, we set a `FloodWait `exception which pauses it for `x` seconds.
