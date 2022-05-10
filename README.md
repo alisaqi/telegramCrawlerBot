@@ -41,3 +41,7 @@ python botCrawler.py
 ```
 
 This code will create a `.session` file which stores all the parameters needed to connect to your account session without requiring any other permission. As a result, after running the file, it will ask you to enter the phone number of the account. In the next step, it will ask you to enter the code sent by telegram to confirm your session connection. In further usage, there will be no need for these steps.
+
+## api-hash and api_id
+
+In order to receive your `api-hash` and `api-id`, you need to log into your account at `https://my.telegram.org/auth` and then create a new application. Whenever you fill out the form, you will receive your account `api-id` and `api-hash`
