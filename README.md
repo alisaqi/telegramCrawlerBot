@@ -44,4 +44,4 @@ This code will create a `.session` file which stores all the parameters needed t
 
 ## api-hash and api_id
 
-In order to receive your `api-hash` and `api-id`, you need to log into your account at `https://my.telegram.org/auth` and then create a new application. Whenever you fill out the form, you will receive your account `api-id` and `api-hash`
+You can get your `api-hash` and `api-id` by logging into your account at `https://my.telegram.org/auth` and then creating a new application. Upon completing the form, you will receive your account `api-id` and `api-hash`.
