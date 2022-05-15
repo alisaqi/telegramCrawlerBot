@@ -23,7 +23,6 @@ from pyrogram.types import Message
 from pyrogram.errors import FloodWait
 from datetime import time, datetime
 import asyncio
-import time as tm
 ```
 
 Every message in a chat is an event. This means that this client is like a listener and when a message is received by our account, the `@app.on_message` function will perform the action written. As an example, in this file, whenever a message is received, the `channels` function will forward it to a specific `chat_id` (each chat has its own unique ID). You can now write something else here, such as checking the sender of the message and printing a sentence if the sender is the user `A`.
