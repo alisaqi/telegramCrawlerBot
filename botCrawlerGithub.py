@@ -7,6 +7,7 @@ from pyrogram.errors import FloodWait
 from datetime import time, datetime
 import asyncio
 import time as tm
+import logging
 
 channelsDictionary = {
     'A': -1000000000000,
@@ -52,6 +53,11 @@ def channels(app, message: Message):
             pass
     except FloodWait as e:
         asyncio.sleep(e.value)  # Wait "x" seconds before continuing
+        
+        logging.basicConfig(filename= "botCrawlerLog.txt", level=logging.WARNING)
+        app.send_document(chat_id= "the ID of your desired Chat",
+                          document="botCrawlerLog.txt",
+                          caption="Log file for Crawler Bot")
 
 
 app.run()
