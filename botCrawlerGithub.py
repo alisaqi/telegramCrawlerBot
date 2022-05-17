@@ -55,7 +55,7 @@ def channels(app, message: Message):
         asyncio.sleep(e.value)  # Wait "x" seconds before continuing
         
         logging.basicConfig(filename= "botCrawlerLog.txt", level=logging.WARNING)
-        app.send_document(chat_id= "the chat_id of your desired Chat",
+        app.send_document(chat_id= "the ID of your desired Chat",
                           document="botCrawlerLog.txt",
                           caption="Log file for Crawler Bot")
 
